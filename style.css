@@ -1,8 +1,19 @@
 
 
+
+.imgs{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    margin:auto;
+    
+}
+
+
 html{
     font-family: 'Lobster', cursive;
 font-family: 'Roboto', sans-serif;
+
 }
 
 body{
@@ -22,7 +33,9 @@ a{
 a:hover{
     color: rgb(24, 194, 112);
 }
-
+.header-div{
+    
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -31,7 +44,8 @@ header{
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: white;
-   box-sizing: border-box;
+    
+   
     
 }
 
@@ -56,15 +70,17 @@ nav ul{
     width: 50px;
     height: 50px;
 }
+  
 
 .content{
     display: flex;
     justify-content: space-between;
-    
     height: 300px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 10px;
+    
+    
     
     
 }
@@ -83,6 +99,13 @@ nav ul{
     gap: 10px;
     align-items: center;
     margin: 2rem 2rem;
+    
+    
+    
+    
+    
+    
+    
   
 }
 
@@ -91,6 +114,11 @@ nav ul{
     justify-content: center;
     padding: 10px 10px;
     background-color: rgb(219, 219, 219);
+    height: 250px;
+    min-width: 300px;
+    
+    
+   
 }
 
 .blox-text{
@@ -110,6 +138,10 @@ nav ul{
 
 
 @media screen and (max-width: 740px) {
+    body{
+        min-width: 450px;
+    }
+    
     nav{
         display: none;
     }
@@ -125,23 +157,71 @@ nav ul{
         align-items: center;
         padding-right: 0;
     }
-
+    
+    .blox-container{
+        display: grid;
+        grid-template-columns: 1fr;
+       
+        
+        
+    }
+    .blox-with-picture{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 1;
+        gap: 10px;
+        
+    }
+    .imgs{
+        object-fit: cover;
+        width: 100%;
+       
     
     }
+    .blox-text{
+        display: flex;
+        flex-direction: column-reverse;
+       align-items: start;
+        
+        max-width: 100%;
+        gap: 10px;
+        
 
+        
+}
+.blox p{
+    padding: 0;
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+.imgs-box{
+    
+    object-fit: cover;
+    width: 450px;
+    width: 100%; 
+}
 
 @media screen and (min-width: 992px){
+    
+    
     nav{
         
         gap: 50px;
 
     }
+    .imgs{
+        object-fit: cover;
+        width: 100%;
 }
 
 
-.imgs{
-    width: 200px;
-    height: 250px;
+
 }
 
 .one{
