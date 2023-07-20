@@ -6,6 +6,7 @@
     height: 250px;
     object-fit: cover;
     margin:auto;
+    min-width: 100px;
     
 }
 
@@ -19,7 +20,7 @@ font-family: 'Roboto', sans-serif;
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(238, 237, 236);
+    
     box-sizing: border-box;
    
     
@@ -44,6 +45,8 @@ header{
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: white;
+    border-bottom: 2px solid rgba(24, 22, 22, 0.3);
+    
     
    
     
@@ -76,8 +79,8 @@ nav ul{
     display: flex;
     justify-content: space-between;
     height: 300px;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     padding-top: 10px;
     
     
@@ -113,9 +116,9 @@ nav ul{
     display: flex;
     justify-content: center;
     padding: 10px 10px;
-    background-color: rgb(219, 219, 219);
+    background-color: rgb(233, 232, 232);
     height: 250px;
-    min-width: 300px;
+    min-width: 320px;
     
     
    
@@ -134,10 +137,72 @@ nav ul{
     padding-left: 10px;
 }
 
+.load-more-button{
+    
+    all:unset;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: x-large;
 
+    
+}
+.load-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.load-more-button:hover{
+    background-color: green;
+    cursor: pointer;
+}
 
+.text-3{
+    
+    font-size: 32px;
+    text-align: center;
+}
 
-@media screen and (max-width: 740px) {
+.footer-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-rows: 400px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+}
+
+.footer-first-box{
+    background-color: blue;
+    color: white;
+    display: grid;
+    grid-template-rows: 8fr 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.footer-second-box{
+    background-color: rgb(2, 2, 16);
+    color: white;
+    display: grid;
+    grid-template-rows: 8fr 1fr 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.fact-sheet-two{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 760px) {
     body{
         min-width: 450px;
     }
@@ -206,9 +271,33 @@ nav ul{
     width: 450px;
     width: 100%; 
 }
+.gone{
+   display: none; 
+
+   
+}
+.load-more-button{
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+   
+}
+
+.text-3{
+    
+   margin-left: 2rem;
+    text-align: left;
+
+}
+
+.footer-boxes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 350px;
 
 @media screen and (min-width: 992px){
-    
+     
+    }
     
     nav{
         
@@ -219,8 +308,6 @@ nav ul{
         object-fit: cover;
         width: 100%;
 }
-
-
 
 }
 
